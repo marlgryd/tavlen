@@ -22,26 +22,17 @@ draw.line((600, 0+luft, 600, 480-luft), fill=(0), width=(5))
 # font = ImageFont.truetype(<font-file>, <font-size>)
 #font = ImageFont.truetype("sans-serif.ttf", 12)
 font = ImageFont.load_default()
-font2 = ImageFont.truetype("Helvetica.tff", 12, encoding="unic")
+font3 = ImageFont.truetype('/font/Roboto-Regular.ttf', 12) # , encoding="unic"
+font2 = ImageFont.truetype('/Library/Fonts/Arial.ttf', 12) # , encoding="unic"
+font4 = ImageFont.truetype('Helvetica.ttf', 12) # , encoding="unic"
 
 # draw.text((x, y),"Sample Text",(r,g,b))
 draw.text((50, 50),'Velkommen til Tavlen',(0),font=font)
-draw.text((200+20, 50),'Her kan det stå masse',(0),font=font)
-draw.text((200*2+20, 50),'Det er bra',(0),font=font)
-draw.text((200*2+20, 200+50),'Her kan det stå ting også',(0),font=font2)
+draw.text((200+20, 50),'Her kan det stå masse',(0),font=font4)
+draw.text((200*2+20, 50),'Det er bra',(0),font=font2)
+draw.text((200*2+20, 200+50),'Her kan det stå ting også',(0),font=font3)
 
 ### ### ### PRODUCE
 
 #img.save('sample-out.jpg')
 im.save('pillow_imagedraw4.bmp', quality=95)
-
-
-
-
-# ImageDraw.Draw(
-#     im  # Image
-# ).text(
-#     (0, 0),  # Coordinates
-#     'Hello world!',  # Text
-#     (0)  # Color
-# )
