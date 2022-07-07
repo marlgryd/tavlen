@@ -1,0 +1,8 @@
+Cython
+Pillow
+numpy
+python-dotenv
+requests
+RPi.GPIO
+spidev
+traceback
